@@ -15,7 +15,7 @@ def acreage_vals(acreages, area):
         if area == dict(acreages[i])["Name"]:
             return dict(acreages[i])["Acreage"]
 
-lafile = open('lasal_acreage.csv','r')
+lafile = open(r"C:\Users\abhii\Desktop\Github\Manti-La-Sal-Acreage\lasal_acreage.csv")
 drdr = csv.DictReader(lafile)
 acreages_and_names = [line2 for line2 in drdr]
 acreages = [float((dict(line)["Acreage"])) for line in acreages_and_names]
